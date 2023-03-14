@@ -1,0 +1,222 @@
+  * {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+input {
+  width: 200px;
+  padding: 5px 5px 5px 5px;
+}
+h3,h4 {
+  margin: 0px 0px 0px 0px;
+}
+ul, hr  {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+ }
+ hr {
+width: 100%;  
+ border: 1px solid rgb(141, 141, 141); 
+ margin: 0px 0px 10px 0px;
+  
+}
+li {
+  list-style: none;
+  cursor: pointer;
+  margin: 0px 0px 5px 0px;
+}
+button {
+  display: block;
+  cursor: pointer;
+  margin: 10px 0px 10px 0px;
+  padding: 5px 10px 5px 10px;
+ background-color: rgb(236, 236, 236);
+  color: rgb(30, 30, 30);
+  border:  1px solid rgb(179, 179, 179);
+  border-radius: 3px;
+  transition: all 0.3s ease .0s;
+ }
+ button:hover {
+  background-color: rgb(219, 219, 219);
+ }
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding:  0px 20px 0px 20px;
+ }
+ .header {
+  height: 50px;
+  width: 100%;
+  background-color: rgb(183, 230, 255);
+  margin: 0px 0px 10px 0px;
+   }
+   .headerName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      font-weight: bold;
+     }
+     img {
+      width: 30px;
+      border-radius: 50%;
+      margin: 0px 0px 0px 10px;
+     }
+   }
+ .headerWrapper {
+  display: flex;
+  align-items: center;
+ justify-content: space-around;
+ gap: 20px;
+ }
+ .startQuizWapper {
+  display: flex;
+  gap: 10px;
+ }
+ .startQuizWapper .startQuizBtn {
+ background-color: #0072b4;
+  color: rgb(239, 239, 239);
+ }
+ .signInWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0px 0px 0px;
+ }
+ .statModal, .authModal {
+  position: fixed;  
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0;
+ background-color: rgb(183, 230, 255);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease .0s;
+ }
+ .statModal div {
+  margin: 0px 0px 10px 0px;
+  }
+ .userWithNoReg {
+  font-size: 14px;
+  color: rgb(255, 72, 72);
+ }
+.activeStatModal {
+  visibility: visible;
+  opacity: 1; 
+}
+ .authModalWrapper {
+  margin: 50px 0px 0px 0px;
+ display: flex;
+  justify-content: center;
+ align-items: center;
+ flex-direction: column;
+  }
+  .authModalWrapper button {
+    margin: 10px auto;
+  }
+ .authModalWrapper [name='email'] {
+margin: 0px 0px 15px 0px;
+  }
+  .authModalWrapper h4 {
+    margin: 30px 0px 10px 0px;
+    text-transform: uppercase;
+    color: rgb(90, 90, 90);
+    font-size: 16px;
+  }
+  .authModalWrapper img {
+  border-radius: 50%;
+  margin: 20px 0px 20px 0px;
+  }
+  .authModalWrapper span {
+ font-weight: bold;
+  }
+ .errorMessage {
+  height: 20px;
+  color: #e50000;
+ }
+.quizWrapper__timelimit {
+  height: 40px;
+}
+.limitTime {
+  color: #bc0000;
+}
+.questionWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+ }
+ .questionColumn {
+ }
+.questionItem {
+  padding: 10px;
+  flex-basis: calc(50% - 10px ); 
+  border:  1px solid rgb(159, 159, 159);
+ background-color: rgb(241, 241, 241);
+ }
+ .statAnswerWrapper {
+  margin: 10px 0px 10px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+ }
+ .statAnswerWrapper span {
+  font-weight: 600;
+ }
+ .statAnswerWrapper hr {
+  margin: 0px 0px 10px 0px;
+ }
+ .statRightAnswers, .statNoRightAnswer {
+  flex-basis: calc(50% - 10px); 
+  height: 100px;  
+ background-color: #b7ffcf;
+  padding: 10px;
+  font-size: 16px;
+}
+.statNoRightAnswer {
+ background-color: #fdc2c2;
+  }
+.staitc-items {
+  margin: 10px 0px 0px 0px;
+}
+.staitc-items li {
+  color: rgb(46, 46, 46);
+}
+.staitc-items li span {
+  font-size: 16px;
+  color: #000;
+  font-weight: 600;
+}
+.answer-item  {
+  background-color: #fff;
+}
+.showStat {
+  font-size: 20px;
+  margin: 0px 0px 0px 0px;
+}
+.buttonWrapper {
+  display: flex;
+  gap: 20px;
+  margin: 0px 0px 10px 0px;
+}
+ .quiz-item {
+  text-align: center;
+  background-color: rgb(189, 189, 189);
+  transition: all 0.1s ease .0s;
+  padding: 1px 0px 1px 0px;
+}
+ .quiz-item:hover {
+  background-color: rgb(154, 154, 154);
+ }
+.active {
+  background-color: #0072b4;
+  color: rgb(255, 255, 255);
+}
+.active:hover {
+  background-color: #0072b4;
+}   
